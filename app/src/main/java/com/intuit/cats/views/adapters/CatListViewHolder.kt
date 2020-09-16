@@ -11,8 +11,8 @@ class CatListViewHolder(
 ) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
     fun bind(cat: Cat, onClickListener: (String) -> Unit) {
-        with(containerView.catBreedNameText) {
-            text = cat.name
+        with(containerView) {
+            catBreedNameText.text = cat.name
             setOnClickListener {
                 onClickListener(cat.id)
             }
