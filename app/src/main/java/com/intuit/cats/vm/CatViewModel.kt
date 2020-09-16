@@ -23,7 +23,7 @@ class CatViewModel @Inject constructor(
         catsRepository.getCatBreeds(it.first, it.second)
     }
 
-    fun fetchCatBreeds() {
+    fun fetchCatBreeds(limit: Int = LIMIT, page: Int = PAGE) {
         _catsBreedPagedLiveData.value = LIMIT to PAGE
     }
 
