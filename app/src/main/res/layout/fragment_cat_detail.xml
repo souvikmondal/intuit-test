@@ -20,7 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/textSizeMedium"
-        android:padding="@dimen/defaultSpace"
+        android:paddingStart="@dimen/defaultSpace"
+        android:paddingEnd="@dimen/defaultSpace"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title"/>
