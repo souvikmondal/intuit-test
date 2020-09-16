@@ -20,8 +20,9 @@ class RetrofitBuilder {
         return this
     }
 
-    fun gson(gson: Gson) {
+    fun gson(gson: Gson): RetrofitBuilder {
         this.gson = gson
+        return this
     }
 
     fun <T> build(service: Class<T>): T {
